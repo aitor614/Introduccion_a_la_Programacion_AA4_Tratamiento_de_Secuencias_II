@@ -6,14 +6,14 @@
 
 
 // Prototipos de funciones
-void funcionControl(bool pasaControl1, bool pasaControl2, int tiempoPorcentajeEvaluar1, double cotizacionPorcentajeEvaluar1, int tiempoPorcentajeEvaluar2, double cotizacionPorcentajeEvaluar2, int tiempoBaja1, double cotizacionValorBaja1, int tiempoBaja2, double cotizacionValorBaja2, double media, int contadorCotizacionMenor, int* cotizacionInicial, int cotizacionFinal, bool tendenciaAlcista);
+void funcionControl(bool pasaControl1, bool pasaControl2, int tiempoAlta1, double cotizacionAlta1, int tiempoAlta2, double cotizacionAlta2, int tiempoBaja1, double cotizacionValorBaja1, int tiempoBaja2, double cotizacionValorBaja2, double media, int contadorCotizacionMenor, int* cotizacionInicial, int cotizacionFinal, bool tendenciaAlcista);
 
 // Inicio Programa principal Main
 int main() {
 
     // Declaracion de variables
-    int tiempo, tiempoPorcentajeEvaluar1, tiempoPorcentajeEvaluar2, tiempoBaja1, tiempoBaja2, penultimoTiempo, i, contador, contadorCotizacionMenor, contadorCotizacionBaja, contadorCotizacionAlta;
-    double cotizacion, sumaCotizacion, cotizacionInicial, penultimaCotizacion, cotizacionFinal, cotizacionValorBaja1, cotizacionValorBaja2, cotizacionPorcentajeEvaluar1, cotizacionPorcentajeEvaluar2, tiempoAlta1, cotizacionAlta1, tiempoAlta2, cotizacionAlta2, media;
+    int tiempo, tiempoPorcentajeEvaluar1, tiempoPorcentajeEvaluar2, tiempoBaja1, tiempoBaja2, tiempoAlta1, tiempoAlta2, penultimoTiempo, i, contador, contadorCotizacionMenor, contadorCotizacionBaja, contadorCotizacionAlta;
+    double cotizacion, sumaCotizacion, cotizacionInicial, penultimaCotizacion, cotizacionFinal, cotizacionValorBaja1, cotizacionValorBaja2, cotizacionPorcentajeEvaluar1, cotizacionPorcentajeEvaluar2, cotizacionAlta1, cotizacionAlta2, media;
     bool pasaControl1, pasaControl2, tendenciaAlcista;
 
 
@@ -21,10 +21,24 @@ int main() {
     tiempo = 0;
     i = 0;
     cotizacion = 0;
+    contador = 0;
     sumaCotizacion = 0;
+    cotizacionFinal = 0;
     media = 0;
     cotizacionInicial = 0;
     contadorCotizacionMenor = 0;
+    cotizacionValorBaja1 = 0;
+    cotizacionValorBaja2 = 0;
+    cotizacionPorcentajeEvaluar1 = 0;
+    cotizacionPorcentajeEvaluar2 = 0;
+    cotizacionAlta1 = 0;
+    cotizacionAlta2 = 0;
+    tiempoPorcentajeEvaluar1 = 0;
+    tiempoPorcentajeEvaluar2 = 0;
+    tiempoBaja1 = 0;
+    tiempoBaja2 = 0;
+    tiempoAlta1 = 0;
+    tiempoAlta2 = 0;
     penultimaCotizacion = 0;
     contadorCotizacionBaja = 0;
     penultimoTiempo = 0;
@@ -179,4 +193,3 @@ void funcionControl(bool pasaControl1, bool pasaControl2, int tiempoAlta1, doubl
         }
     }
 }
-
